@@ -10,3 +10,62 @@ header {
 .mainSection{
   text-align: center;
 }
+
+
+table , td , th {
+  border: 5px solid #eeddee;
+border-collapse: collapse ;
+padding: 20px;
+border-color: 5px solid rgb(192, 129, 129);
+
+}
+
+table {
+width: 100%;
+border-spacing: 40px;
+
+}
+
+
+
+td{
+  text-align: center;
+}
+td:hover{background-color: azure  ;
+transition: 0.8s;
+}
+tr:nth-child(even){
+background-color: antiquewhite;
+}
+
+th:nth-child(even){
+  background-color: #555555;
+  
+  }
+
+  .amir {
+    background-color: #777777;
+    padding: 15px;
+    margin-top: 5px;
+  }
+  
+  .amir :hover{
+
+    background-color:#666666  ;
+    transition: 0.8s;
+  }
+
+  .amir2 {
+    background-color: #777777;
+    padding: 15px;
+    margin-top: 5px;
+  }
+
+  .amir2 :hover{
+    background-color: #fbaaee;
+  }
+
+  .red :hover{
+color: rebeccapurple;
+
+  }
