@@ -1,71 +1,118 @@
-header {
-  background-color: red;
+body {
+   background-color: Ivory;
 }
 
-.slider {
-  background-color: blue;
+* {
+  box-sizing: border-box;
+}
+
+.Meno {
+list-style-type: none;
+padding: 0;
+margin: 0;
+overflow: hidden;
+background-color: #696969;
+border-radius: 5px;
+}
+
+.Meno li {
+float: left;
+
 }
 
 
-.mainSection{
-  text-align: center;
-}
-
-
-table , td , th {
-  border: 5px solid #eeddee;
-border-collapse: collapse ;
+.Meno a {
+display: block;
+text-align: center;
 padding: 20px;
-border-color: 5px solid rgb(192, 129, 129);
+text-decoration: none;
+color: black;
 
 }
 
-table {
-width: 100%;
-border-spacing: 40px;
+.side a {
+  text-decoration: none;
+}
+
+
+
+.Meno a:hover {
+background-color: #DCDCDC;
+transition: 0.5s;
+border-radius: 5px;
+}
+
+.side  {
+  background-color: #9F9C99;
+  padding: 20px;
+  height: 400px;
+  width: 20%;
+  float: left;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 2% ;
+  margin-left: 2% ;
+  margin-bottom: 2% ;
+
+  
+}
+
+aside ul {
+list-style-type: none;
+padding: 0;
 
 }
 
 
 
-td{
+article {
+  background-color:#FF6F61;
+  padding: 20px;
+  height: 400px; 
+  width: 74%;
+  float: right;
+  border-radius: 5px;
+  }
+
+
+footer {
+  background-color: SlateGray;
+  padding: 80px;
   text-align: center;
-}
-td:hover{background-color: azure  ;
-transition: 0.8s;
-}
-tr:nth-child(even){
-background-color: antiquewhite;
+  color: white;
+  height: 265px ; 
+  border-radius: 5px;
 }
 
-th:nth-child(even){
-  background-color: #555555;
-  
-  }
+section::after{
+  content: " ";
+  clear: both;
+  display: table;
 
-  .amir {
-    background-color: #777777;
-    padding: 15px;
-    margin-top: 5px;
-  }
-  
-  .amir :hover{
+}
 
-    background-color:#666666  ;
-    transition: 0.8s;
-  }
 
-  .amir2 {
-    background-color: #777777;
-    padding: 15px;
-    margin-top: 5px;
-  }
+form {
+background-color: #DCDCDC;
+border-radius: 5px;
 
-  .amir2 :hover{
-    background-color: #fbaaee;
-  }
+}
 
-  .red :hover{
-color: rebeccapurple;
+h3 {
+  display: inline;
+}
 
-  }
+form {
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
