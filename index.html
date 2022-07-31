@@ -6,12 +6,14 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="ima" href="favicon/walter-white 2.png">
 
+
+    
   </head>
 
 <body>
   
 
-  <ul class="Meno-">
+  <ul class="Meno">
 <li> <a href="#Home"> Home </a> </li>
 <li> <a href="#Images"> Images </a> </li>
 <li> <a href="#Books"> Books </a> </li>
@@ -23,73 +25,180 @@
 
 <section class="sec">
 
+
 <aside class="side">
 
-
 <ul >
-  <li> <a href="#"> amir </a> </li>
-  <li> <a href="#"> ali </a> </li>
-  <li> <a href="#"> maloos </a> </li>
+  <li> <a href="#" class="side_links"> Guitar </a> </li>
+  <li> <a href="#" class="side_links"> the painter </a> </li>
+  <li> <a href="#" class="side_links"> Karate </a> </li>
 </ul>
 
 </aside>
 
+
 <article>
   <h1> Amir</h1>
-  <p> He is a  big dancer!</p>
+  <p> He is a  Great dancer!</p>
   </article>
 
 </section>
 
-<form>
 
-  <label for="firstname"> <strong> First Name : </strong>  </label> <br>
-  <input type="text" id="firagstname" name="firstname" placeholder="type some"> <br>
+
+<form onsubmit="return myFunction()" name="js">
+
+  <label for="firstname" class="lable1"> <strong> First Name : </strong>  </label> 
+  <input type="text" id="firstname" name="firstname" placeholder="First Name"> 
   
-  <label for="lastname"> <strong> Last Name : </strong>  </label> <br>
-  <input type="text" id="lastname" name="lastname"> <br> <br> 
+  <label for="lastname" class="lable2"> <strong> Last Name : </strong>  </label> 
+  <input type="text" id="lastname" name="lastname" placeholder="Last Name"> <br> <br> 
 
-  <h3> <b> Gender : </b> </h3>
-
-  <input type="radio" id="gender1" name="gender" > 
-  <label for="gender1"> Male </label> 
+<!--   
+  <h3 id="gender"> <b> Gender : </b> </h3>
 
 
-  <input type="radio" id="gender2" name="gender" >
+  <input type="radio" id="gender1" name="gender" class="gen1">
+  <label for="gender1" > Male </label> 
+
+
+  <input type="radio" id="gender2" name="gender" class="gen2">
   <label for="gender2"> Female </label>
 
-   <input type="radio" id="gender3" name="gender">
-   <label for="gender3"> Custom </label> <br> <br>
+   <input type="radio" id="gender3" name="gender" class="gen3">
+   <label for="gender3""> Custom </label> <br> <br> -->
+
+
+
+   <label for="gender">Choose yout gender :</label>
+  <select id="gender" name="cars">
+    <option value=" Please select your gender." selected disabled hidden> Select  </option>
+    <option value=" Male"> Male </option>
+    <option value=" Female"> Female </option>
+    <option value=" Custom"> Custom </option>
+
+
+  </select>
+
+
+
 <strong>
-<p>
+  <p class="reason">
   What is your reason for sending this request?
-</p>
+</p> 
+</strong>
 
 
-  <input type="checkbox" id="reason1" name="reason1">
+<div class="div_reason">
+
+  <input type="checkbox" id="reason1" name="reason1" value="Interest">
   <label for="reason1"> Interest  </label> <br>
 
-  <input type="checkbox" id="reason2" name="reason2">
+  <input type="checkbox" id="reason2" name="reason2" value="Earn money">
   <label for="reason2"> Earn money </label> <br>
 
-  <input type="checkbox" id="reason3" name="reason3">
+  <input type="checkbox" id="reason3" name="reason3" value="Science acquirement">
   <label for="reason3">  Science acquirement </label> <br>
 
-    <input type="submit" value="Submit"> 
+</div>
+
+    <input type="submit" value="Submit" class="submit"> 
 
 
+<div id="Text1">
 
+    <p id="text1" style="display: none;">
+
+      blue
+      
+      </p>
+
+    </div> 
+
+    <div id="Text2">
+
+      <p id="text2" style="display: none;">
   
+        red
+        
+        </p>
+  
+      </div> 
+
+
+      <div id="Text3">
+
+        <p id="text3" style="display: none;">
+    
+          gray
+          
+          </p>
+    
+        </div> 
+
+
 </form>
 
 
-<footer>
+
+<script>
+  
+  function myFunction () {
+    
+  var firstname = document.forms["js"]["firstname"].value; 
+  var lastname = document.getElementById("lastname").value; 
+  var gender = document.getElementById("gender").value;
+
+
+  if (document.getElementById('reason1').checked == true) {
+      var x = document.getElementById('reason1').value; 
+                                                  }
+      else {
+    var x =" ";
+  }
+      
+  if (document.getElementById('reason2').checked == true) {
+      var y = document.getElementById('reason2').value; 
+                                                  }
+      else {
+    var y =" ";
+  }
+
+  if (document.getElementById('reason3').checked == true) {
+      var z = document.getElementById('reason3').value; 
+                                                  }
+      else {
+    var z =" ";
+  }
+    
+
+
+  alert ( "Your Name is : " + firstname + " " + lastname + "\n" +  "Your Gender is :" + gender + "\n" + "Your Reason is :"  + "\n" + x  + "\n" + y + "\n" + z )
+
+}
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+<footer class="foot">
   <p> footer</p>
 
 </footer>
+
+
+    
 
 </body>
 
 
 </html>
-
