@@ -48,48 +48,79 @@
 
 <form onsubmit="return myFunction()" name="js">
 
-  <label for="firstname" class="lable1"> <strong> First Name : </strong>  </label> 
-  <input type="text" id="firstname" name="firstname" placeholder="First Name"> 
+  <label for="firstname" class="firstname"> <strong> First Name : </strong>  </label> 
+  <input type="text" id="firstname" name="firstname" placeholder="First Name">
   
-  <label for="lastname" class="lable2"> <strong> Last Name : </strong>  </label> 
-  <input type="text" id="lastname" name="lastname" placeholder="Last Name"> <br> <br> 
 
-<!--   
-  <h3 id="gender"> <b> Gender : </b> </h3>
-
-
-  <input type="radio" id="gender1" name="gender" class="gen1">
-  <label for="gender1" > Male </label> 
-
-
-  <input type="radio" id="gender2" name="gender" class="gen2">
-  <label for="gender2"> Female </label>
-
-   <input type="radio" id="gender3" name="gender" class="gen3">
-   <label for="gender3""> Custom </label> <br> <br> -->
-
-
-
-   <label for="gender">Choose yout gender :</label>
-  <select id="gender" name="cars">
+  <label for="gender" id="choose_gender"> <strong> Choose yout gender : </strong> </label>
+  <select id="gender_option" name="gender">
     <option value=" Please select your gender." selected disabled hidden> Select  </option>
     <option value=" Male"> Male </option>
     <option value=" Female"> Female </option>
     <option value=" Custom"> Custom </option>
 
-
   </select>
 
+   
+<label for="number" class="number_child"> <b> The number of your children : </b> </label>
+<input type="number" id="number" name="number" min="0" max="20" placeholder="-">
+  
+  
+  <br>
 
+  <div class="lastname_date"> 
+  <label for="lastname" class="lastname"> <strong> Last Name : </strong>  </label> 
+  <input type="text" id="lastname" name="lastname" placeholder="Last Name"> 
+  
+  <label for="tart" class="start_date">  <b> Date of starting work : </b>  </label>
+  <input type="date" id="start" name="start_date"> <br>
+
+</div>
+
+  <br> <br> 
+
+
+
+
+
+  <div class="age">
+
+    <strong>
+      <p  >
+       <b> Your Age : </b> 
+      </p> 
+    </strong>
+    
+    
+    <div>
+    
+      <input type="radio" id="age1" name="age" class="age_radio">
+      <label for="age1" > 9 - 15 </label> <br>
+    
+      <input type="radio" id="age2" name="age" class="age_radio">
+      <label for="age2"> 16 - 25 </label> <br>
+    
+      <input type="radio" id="age3" name="age" class="age_radio">
+      <label for="age3""> 26 - 40  </label> <br> 
+ 
+      <input type="radio" id="age4" name="age" class="age_radio">
+      <label for="age4""> 41 - 99  </label> <br> 
+    
+    </div>
+    
+    </div>
+
+
+<div class="reason1">
 
 <strong>
-  <p class="reason">
+  <p  class="par">
   What is your reason for sending this request?
 </p> 
 </strong>
 
 
-<div class="div_reason">
+<div class="reason2">
 
   <input type="checkbox" id="reason1" name="reason1" value="Interest">
   <label for="reason1"> Interest  </label> <br>
@@ -102,39 +133,28 @@
 
 </div>
 
-    <input type="submit" value="Submit" class="submit"> 
+</div>
+<br>
 
 
-<div id="Text1">
+<label for="email" class="email"> <strong>  Your Email : </strong> </label>
+  <input type="email" id="email" placeholder="Enter Your email  "> <br>
 
-    <p id="text1" style="display: none;">
-
-      blue
-      
-      </p>
-
-    </div> 
-
-    <div id="Text2">
-
-      <p id="text2" style="display: none;">
+  <label for="pas" class="password"> <strong> Password :  </strong> </label>
+  <input type="password" id="pas"> <br>
   
-        red
-        
-        </p>
-  
-      </div> 
 
 
-      <div id="Text3">
+    <input type="submit" value="Submit" class="submit">
+     
+    <input type="reset" class="reset">
 
-        <p id="text3" style="display: none;">
-    
-          gray
-          
-          </p>
-    
-        </div> 
+
+
+
+   
+
+
 
 
 </form>
@@ -179,12 +199,8 @@
 
 
 
-
-
-
-
-
   </script>
+
 
 
 
@@ -196,9 +212,6 @@
 </footer>
 
 
-    
-
-</body>
-
+  
 
 </html>
