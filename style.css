@@ -1,5 +1,8 @@
 body {
-   background-color: Beige;
+background-image: url('Nature3.jpg') ;
+background-attachment: fixed; 
+background-size: cover; 
+background-repeat: no-repeat;
 }
 
 * {
@@ -14,8 +17,8 @@ overflow: hidden;
 background-color: #999999;
 border-radius: 5px;
 margin-right: 1% ;
-  margin-left: 1% ;
-  margin-top: 1.5%;
+margin-left: 20% ;
+width: 40%;
 }
 
 .Meno li {
@@ -33,6 +36,11 @@ color: black;
 
 }
 
+.Meno a:hover {
+  background-color: #FF6F61;
+  transition: 0.4s;
+  border-radius: 5px;
+  }
 
 
 .side a {
@@ -42,13 +50,6 @@ color: black;
 }
 
 
-
-.Meno a:hover {
-background-color: #FF6F61;
-transition: 0.4s;
-border-radius: 5px;
-}
-
 aside ul {
   list-style-type: none;
   padding: 0;
@@ -56,33 +57,45 @@ aside ul {
   }
 
 .side  {
-  background-color: Silver;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px;
-  height: 400px;
+  height: 511px;
   width: 20%;
-  float: left;
+  float: right;
   text-decoration: none;
   border-radius: 5px;
-  margin-left: 1% ;
-  margin-top: 1.5%;
+  margin-top: 10.7%;
   margin-bottom: 1% ;
-  
-  
+  position: relative;
+  right: 25px;
+}
+
+.con{
+  color: red;
 }
 
 
 article {
-  background-color:CadetBlue;
-  padding: 20px;
-  height: 400px; 
-  width: 73%;
-  float: right;
+  background-color: silver;
+  background-repeat: no-repeat;
+  padding: 15px;
+  width: 75%;
+  float: left;
   border-radius: 5px;
   margin-right: 2.5% ;
   margin-left: 1% ;
-  margin-top: 1.5%;
+  margin-top: 10%;
   margin-bottom: 1% ;
+  position: relative;
+  top: 10px;
   }
+
+  .pos {  
+    height: 480px;
+  }
+
+
 
   section::after{
     content: " ";
@@ -100,13 +113,16 @@ article {
 }
 
 
-form {
-background-color: #DCDCDC;
+.myform {
+background-image: url('Nature2.jpg') ;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
 border-radius: 5px;
 padding: 10px;
 margin-right: 1% ;
 margin-left: 1% ;
-margin-top: 0.5%;
+margin-top: 2%;
 margin-bottom: 1% ;
 
 }
@@ -133,7 +149,7 @@ display: inline-block;
 
 
 .reason1 {
-  margin-left: 37.66%;
+  margin-left: 38.66%;
   margin-top: -10%;
   width: 24.5%;  
 }
@@ -142,6 +158,19 @@ display: inline-block;
   display: inline-block;
   width: 100%;
   }  
+
+  .opinion1 {
+    margin-left: 69.6%;
+    margin-top: -8.5%;
+    width: 24.5%;  
+  }
+  
+  .opinion2  {
+    display: inline-block;
+    width: 100%;
+    }  
+
+
 
 .age {
   display: inline-block;
@@ -178,7 +207,7 @@ color: #FF6F61;
   height: 25px;
   width: 160px;
   border-radius: 3px;
-  margin-left: 0.2%;
+  margin-left: 1.2%;
   margin-bottom: -3%  ;
 }
 
@@ -188,6 +217,7 @@ color: #FF6F61;
   height: 25px;
   width: 160px;
   border-radius: 3px;
+  margin-left: 1%;
 }
 
 #gender_option {
@@ -196,6 +226,7 @@ color: #FF6F61;
   border-radius: 3px;
   height: 25px;
   width: 65px;
+  margin-left: 0.8%;
 }
 
 
@@ -239,6 +270,7 @@ text-align: center;
   padding-left: 2% ;
   margin-top: 1.5%;
   display: inline-block;
+  margin-left: 3.3%;
 }
 
 #pas {
@@ -247,6 +279,7 @@ text-align: center;
   height: 25px;
   width: 160px;
   border-radius: 3px;
+  margin-left: 2%;
 }
 
 
@@ -257,7 +290,13 @@ text-align: center;
   height: 25px;
   width: 160px;
   border-radius: 3px;
+  margin-left: 1%;
 }
+
+.email {
+  margin-left: 3.3%;
+}
+
 
 
 .reset{
@@ -294,7 +333,7 @@ margin-left: 13%;
 
 
 .number_child{
-  margin-left: 13%;
+  margin-left: 12%;
   
   }
   
@@ -314,4 +353,26 @@ margin-left: 13%;
 }  
 
 
-  
+.phone {
+  margin-left: 8.8%;
+}
+
+
+.div_submit {
+  padding: 2%;
+  display: inline-block;
+  }
+
+.div_reset {
+  padding: 2%;
+  display: inline-block;
+  margin-left: 10.5%;
+}
+
+
+
+#icon{
+  float: right;
+}
+
+
